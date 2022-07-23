@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
-import { CONTACTS_INFO } from '../../config';
+import contacts from '../../contacts';
 
 class BannerV2 extends Component {
 
@@ -17,7 +17,7 @@ class BannerV2 extends Component {
 			        <div className="col-lg-8 align-self-center">
 			          <div className="banner-inner">
 			            <h2><span>Ms Hằng Nga</span> Education</h2>
-			            <p>{CONTACTS_INFO.slogan}</p>
+			            <p>{contacts.slogan}</p>
 			            <div className="btn-wrap">
 			              <Link className="btn btn-base" to="/">Đăng ký học</Link>
 			            </div>                            

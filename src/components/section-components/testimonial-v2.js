@@ -13,8 +13,8 @@ class TestimonialV2 extends Component {
 			    <div className="row">
 			      <div className="col-lg-5">
 			        <div className="section-title">
-			          <h2>Thousands Of Happy Customers!</h2>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+			          <h2>Cảm nhận của phụ huynh và học sinh</h2>
+			          <p>Hệ thống học tập của cô Hằng Nga luôn chào đón bố mẹ mong muốn thay đổi cách học tập của con mà chưa tìm ra phương pháp.</p>
 			        </div>
 			        <div className="thumb">
 			          <img src={publicUrl+"assets/img/customer/1.png"} alt="img" />
@@ -23,7 +23,7 @@ class TestimonialV2 extends Component {
 			      <div className="col-lg-6 offset-lg-1">
 			        <div className="single-customer-wrap media">
 			          <div className="media-body">
-			            <h5>George L. Parisi</h5>
+			            <h5>Em Nguyễn Đăng Tuấn Anh</h5>
 			            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
 			          </div>
 			          <div className="icon align-self-end">
@@ -32,7 +32,7 @@ class TestimonialV2 extends Component {
 			        </div>
 			        <div className="single-customer-wrap media nesting">
 			          <div className="media-body">
-			            <h5>Miguel V. Henley</h5>
+			            <h5>Em Nguyễn Quốc Huy</h5>
 			            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
 			          </div>
 			          <div className="icon align-self-end">
@@ -41,7 +41,7 @@ class TestimonialV2 extends Component {
 			        </div>
 			        <div className="single-customer-wrap media">
 			          <div className="media-body">
-			            <h5>Mary Gregory</h5>
+			            <h5>Bác Trần Quang Quý</h5>
 			            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
 			          </div>
 			          <div className="icon align-self-end">
@@ -52,10 +52,6 @@ class TestimonialV2 extends Component {
 			    </div>
 			  </div>
 			</section>
-
-
-
-
         }
 }
 

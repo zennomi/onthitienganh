@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import contacts from '../../contacts';
 
 class Footer_v1 extends Component {
 
@@ -23,37 +24,27 @@ class Footer_v1 extends Component {
 					<div className="row">
 						<div className="col-lg-4 col-md-6">
 							<div className="footer-widget widget widget_contact">
-								<h4 className="widget-title">Contact Us</h4>
+								<h4 className="widget-title">{contacts.brandName}</h4>
 								<div className="media">
 									<div className="thumb">
-										<img src={publicUrl + "assets/img/footer/1.png"} alt="img" />
+										<i class="fas fa-map-marker-alt"></i>
 									</div>
 									<div className="media-body">
-										<p>2200 Pooz Street</p>
-										<p>Henderson, TN 38340</p>
+										<p className="m-0">{contacts.address}</p>
 									</div>
 								</div>
 								<div className="media">
 									<div className="thumb mt-0">
-										<img src={publicUrl + "assets/img/footer/2.png"} alt="img" />
+										<i class="fas fa-phone-alt"></i>
 									</div>
 									<div className="media-body">
-										<p className="m-0">example@mail.com</p>
-									</div>
-								</div>
-								<div className="media">
-									<div className="thumb mt-0">
-										<img src={publicUrl + "assets/img/footer/3.png"} alt="img" />
-									</div>
-									<div className="media-body">
-										<p className="m-0">517-383-6673</p>
+										<p className="m-0">{contacts.phone}</p>
 									</div>
 								</div>
 								<ul className="social-area">
-									<li><a href="https://www.facebook.com/solverwp/"><i className="fab fa-facebook-f" /></a></li>
-									<li><a href="https://www.twitter.com/solverwp/"><i className="fab fa-twitter" /></a></li>
-									<li><a href="https://www.google-plus.com/solverwp/"><i className="fab fa-google-plus-g" /></a></li>
-									<li><a href="https://www.pinterest.com/solverwp/"><i className="fab fa-pinterest-p" /></a></li>
+									<li><a href={contacts.fanpage} target='_blank' ><i className="fab fa-facebook-f" /></a></li>
+									<li><a href={contacts.map} target='_blank' ><i class="fas fa-map-marker-alt"></i></a></li>
+									<li><a href={contacts.tiktok} target='_blank' ><i class="fab fa-tiktok"></i></a></li>
 								</ul>
 							</div>
 						</div>

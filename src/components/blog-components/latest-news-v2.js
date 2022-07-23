@@ -38,66 +38,6 @@ class LatestNewsV2 extends Component {
                 </div>
               </div>
             ))}
-            <div className="col-lg-4 col-md-6">
-              <div className="single-blog-wrap">
-                <div className="thumb">
-                  <img src={publicUrl + "assets/img/blog/1.png"} alt="img" />
-                </div>
-                <div className="blog-details">
-                  <div className="meta">
-                    <span>
-                      <i className="far fa-calendar-alt" />
-                      28 JANUARY, 2020
-                    </span>
-                  </div>
-                  <h5>
-                    <Link to="/blog-details">
-                      10 Reasons To Start Your Own, Profitable Website!
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-blog-wrap">
-                <div className="thumb">
-                  <img src={publicUrl + "assets/img/blog/2.png"} alt="img" />
-                </div>
-                <div className="blog-details">
-                  <div className="meta">
-                    <span>
-                      <i className="far fa-calendar-alt" />
-                      28 JANUARY, 2020
-                    </span>
-                  </div>
-                  <h5>
-                    <Link to="/blog-details">
-                      You can also find trends and techniques from other UXers
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-blog-wrap">
-                <div className="thumb">
-                  <img src={publicUrl + "assets/img/blog/3.png"} alt="img" />
-                </div>
-                <div className="blog-details">
-                  <div className="meta">
-                    <span>
-                      <i className="far fa-calendar-alt" />
-                      28 JANUARY, 2020
-                    </span>
-                  </div>
-                  <h5>
-                    <Link to="/blog-details">
-                      UX design blog focusing on accessibility and design.
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

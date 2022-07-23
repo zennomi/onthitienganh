@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { CONTACTS_INFO } from "../../config";
+import contacts from "../../contacts";
 
 class NavbarV2 extends Component {
   render() {
@@ -26,11 +26,11 @@ class NavbarV2 extends Component {
               </p>
               <div className="address-inner">
                 <h5>Địa chỉ</h5>
-                <p>{CONTACTS_INFO.address}</p>
+                <p>{contacts.address}</p>
               </div>
               <div className="address-inner">
                 <h5>Hotline</h5>
-                <p>{CONTACTS_INFO.phone}</p>
+                <p>{contacts.phone}</p>
               </div>
               {/* <div className="address-inner mb-0">
 				        <h5>Fanpage</h5>
@@ -39,8 +39,8 @@ class NavbarV2 extends Component {
             </div>
             <div className="dkt-market-earn">
               <div className="address-inner">
-                <h5>{CONTACTS_INFO.brandName}</h5>
-                <p>{CONTACTS_INFO.slogan}</p>
+                <h5>{contacts.brandName}</h5>
+                <p>{contacts.slogan}</p>
               </div>
               <div className="row">
                 <div className="col-lg-6">
@@ -147,7 +147,7 @@ class NavbarV2 extends Component {
                   <li>
                     <a href="#">
                       <i class="fas fa-phone-alt"></i>
-                      {CONTACTS_INFO.phone}
+                      {contacts.phone}
                     </a>
                   </li>
                   <li className="menu-bar dropdown-menu-btn">
