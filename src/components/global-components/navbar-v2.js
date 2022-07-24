@@ -91,55 +91,6 @@ class NavbarV2 extends Component {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <Link to="/product">Product</Link>
-                  </li>
-                  <li className="menu-item-has-children current-menu-item">
-                    <a href="#">Pages</a>
-                    <ul className="sub-menu">
-                      <li>
-                        <Link to="/product">Product</Link>
-                      </li>
-                      <li>
-                        <Link to="/product-details">Product Details</Link>
-                      </li>
-                      <li>
-                        <Link to="/vendor">Vendor</Link>
-                      </li>
-                      <li>
-                        <Link to="/category">Category</Link>
-                      </li>
-                      <li>
-                        <Link to="/faq">Faq</Link>
-                      </li>
-                      <li>
-                        <Link to="/policy">Refund Policy</Link>
-                      </li>
-                      <li>
-                        <Link to="/error">404</Link>
-                      </li>
-                      <li>
-                        <Link to="/sign-in">Sign In</Link>
-                      </li>
-                      <li>
-                        <Link to="/sign-up">Sign Up</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children current-menu-item">
-                    <Link to="/blog">Blog</Link>
-                    <ul className="sub-menu">
-                      <li>
-                        <Link to="/blog">Blog Standard</Link>
-                      </li>
-                      <li>
-                        <Link to="/blog-details">Blog Details</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
                 </ul>
               </div>
               <div className="nav-right-part nav-right-part-desktop">

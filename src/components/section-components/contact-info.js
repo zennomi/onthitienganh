@@ -9,7 +9,7 @@ class ContactInfo extends Component {
 
 		let publicUrl = process.env.PUBLIC_URL + '/'
 
-		return <section className="contact-page-area bg-sky-blue  pd-top-100 pd-bottom-70">
+		return <section id="lien-he" className="contact-page-area bg-sky-blue  pd-top-100 pd-bottom-70">
 			<div className="container">
 				<div className="section-title text-center">
 					<h3>Liên hệ</h3>

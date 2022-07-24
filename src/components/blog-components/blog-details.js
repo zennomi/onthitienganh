@@ -1,49 +1,88 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Comments from './comments';
-import Sidebar from './sidebar';
-import blogs from '../../blogs';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Comments from "./comments";
+import Sidebar from "./sidebar";
+import blogs from "../../blogs";
 
 class BlogDetails extends Component {
   render() {
-    let publicUrl = process.env.PUBLIC_URL+'/'
-    let imagealt = 'image'
-	const blog = blogs[0];
+    let publicUrl = process.env.PUBLIC_URL + "/";
+    let imagealt = "image";
+    const blog = blogs[0];
     return (
-     <section className="blog-page-area pd-top-100 pd-bottom-100">
-		  <div className="container">
-		    <div className="row">
-		      <div className="col-lg-8">
-		        <div className="blog-details-page-inner">
-		          <div className="single-blog-inner m-0">
-		            <div className="thumb">
-		              <img src={publicUrl+blog.image} alt="image" />
-		            </div>
-		            <div className="single-blog-details">
-		              <div className="meta">
-		                <span className="author">
-		                  <i className="far fa-user" />
-		                  {blog.badge}
-		                </span>
-		                <span className="date">
-		                  <i className="far fa-calendar-alt" />
-		                  25 Aug 2020
-		                </span>
-		                <span className="comments">
-		                  <i className="far fa-comments" />
-		                  Comments (05)
-		                </span>
-		              </div>
-		              <h3>{blog.title}</h3>
-		              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it but who has any right to find fault with a man who chooses </p>
-		              <blockquote className="blockquote" style={{background: 'url('+publicUrl+'assets/img/blog/bg.png)'}}>
-		                <p>Smashing Podcast Episode With Paul Boag What Is Conversion Optimization</p>
-		                <footer className="blockquote-footer">Bailey Dobson</footer>
-		              </blockquote>
-		            </div>
-		            <h4><i className="far fa-check-circle" />Inspired Design Decisions With Otto Storch When Idea Copy</h4>
-		            <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
-		            <div className="meta">
+      <section className="blog-page-area pd-top-100 pd-bottom-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <div className="blog-details-page-inner">
+                <div className="single-blog-inner m-0">
+                  <div className="thumb">
+                    <img src={publicUrl + blog.image} alt="image" />
+                  </div>
+                  <div className="single-blog-details">
+                    <div className="meta">
+                      <span className="author">
+                        <i className="far fa-user" />
+                        {blog.badge}
+                      </span>
+                      <span className="date">
+                        <i className="far fa-calendar-alt" />
+                        25 Aug 2020
+                      </span>
+                      <span className="comments">
+                        <i className="far fa-comments" />
+                        Comments (05)
+                      </span>
+                    </div>
+                    <h3>{blog.title}</h3>
+                    <p>
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising pain was born and I will
+                      give you a complete account of the system, and expound the
+                      actual teachings of the great explorer of the truth, the
+                      master-builder of human happiness. No one rejects,
+                      dislikes, or avoids pleasure itself, because it is
+                      pleasure, but because those who do not know how to pursue
+                      pleasure rationally encounter consequences that are
+                      extremely painful. Nor again is there anyone who loves or
+                      pursues or desires to obtain pain of itself, because it is
+                      pain, but because occasionally circumstances occur in
+                      which toil and pain can procure him some great pleasure.
+                      To take a trivial example, which of us ever undertakes
+                      laborious physical exercise, except to obtain some
+                      advantage from it but who has any right to find fault with
+                      a man who chooses{" "}
+                    </p>
+                    <blockquote
+                      className="blockquote"
+                      style={{
+                        background:
+                          "url(" + publicUrl + "assets/img/blog/bg.png)",
+                      }}
+                    >
+                      <p>
+                        Smashing Podcast Episode With Paul Boag What Is
+                        Conversion Optimization
+                      </p>
+                      <footer className="blockquote-footer">
+                        Bailey Dobson
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <h4>
+                    <i className="far fa-check-circle" />
+                    Inspired Design Decisions With Otto Storch When Idea Copy
+                  </h4>
+                  <p>
+                    No one rejects, dislikes, or avoids pleasure itself, because
+                    it is pleasure, but because those who do not know how to
+                    pursue pleasure rationally encounter consequences that are
+                    extremely painful. Nor again is there anyone who loves or
+                    pursues or desires to obtain pain of itself, because it is
+                    pain, but because occasionally circumstances occur in which
+                    toil and pain can procure him some great pleasure.
+                  </p>
+                  {/* <div className="meta">
 		              <div className="tags">
 		                <span>Popular Tags:</span>
 		                <a href="#">IT Consulting,</a>
@@ -202,72 +241,65 @@ class BlogDetails extends Component {
 		                  </div>
 		                </div>
 		              </form>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		      <div className="col-lg-4">
-		        <div className="sidebar-area">
-		          <div className="widget widget-search">
-		            <div className="single-search-inner">
-		              <input type="text" placeholder="Search here" />
-		              <button><i className="la la-search" /></button>
-		            </div>
-		          </div>
-		          <div className="widget widget-category widget-border">
-		            <h5 className="widget-title">Category</h5>
-		            <ul>
-		              <li><a href="#">Financial Planning<i className="la la-angle-right" /></a></li>
-		              <li><a href="#">Relationship Buildup<i className="la la-angle-right" /></a></li>
-		              <li><a href="#">Investement Planning<i className="la la-angle-right" /></a></li>
-		              <li><a href="#">Marketing Strategy<i className="la la-angle-right" /></a></li>
-		              <li><a href="#">Product Strategy<i className="la la-angle-right" /></a></li>
-		            </ul>
-		          </div>
-		          <div className="widget widget-news widget-border">
-		            <h5 className="widget-title">Recent News</h5>
-		            <div className="single-news-wrap media">
-		              <div className="thumb">
-		                <img src={publicUrl+"assets/img/widget/1.png"} alt="img" />
-		              </div>
-		              <div className="media-body">
-		                <p className="date"><i className="far fa-calendar-alt" />25 Aug 2020</p>
-		                <h6><a href="#">Smashing Podcast Epis With Rach Andrewe</a></h6>
-		              </div>
-		            </div>
-		            <div className="single-news-wrap media">
-		              <div className="thumb">
-		                <img src={publicUrl+"assets/img/widget/2.png"} alt="img" />
-		              </div>
-		              <div className="media-body">
-		                <p className="date"><i className="far fa-calendar-alt" />25 Aug 2020</p>
-		                <h6><a href="#">Responsive Web And Desktop Develope</a></h6>
-		              </div>
-		            </div>
-		            <div className="single-news-wrap media">
-		              <div className="thumb">
-		                <img src={publicUrl+"assets/img/widget/3.png"} alt="img" />
-		              </div>
-		              <div className="media-body">
-		                <p className="date"><i className="far fa-calendar-alt" />25 Aug 2020</p>
-		                <h6><a href="#">Django Highlig Models Admin Harnessing</a></h6>
-		              </div>
-		            </div>
-		          </div>
-		          <div className="widget widget-tags widget-border">
-		            <h5 className="widget-title">Popular Tags</h5>
-		            <div className="tagcloud">
-		              <a href="#">Business</a>
-		              <a href="#">Corporate</a>
-		              <a href="#">HTML</a>
-		              <a href="#">Finance</a>
-		              <a href="#">Investment</a>
-		              <a href="#">CSS</a>
-		              <a href="#">Planing</a>
-		              <a href="#">Creative</a>
-		            </div>   
-		          </div>
-		          <div className="widget widget-author widget-border text-center">
+		            </div> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="sidebar-area">
+                <div className="widget widget-search">
+                  <div className="single-search-inner">
+                    <input type="text" placeholder="Search here" />
+                    <button>
+                      <i className="la la-search" />
+                    </button>
+                  </div>
+                </div>
+                <div className="widget widget-category widget-border">
+                  <h5 className="widget-title">Thư mục</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Hoạt động học tập
+                        <i className="la la-angle-right" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Hoạt động ngoại khoá
+                        <i className="la la-angle-right" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="widget widget-news widget-border">
+                  <h5 className="widget-title">Bài viết khác</h5>
+                  <div className="single-news-wrap media">
+                    <div className="thumb">
+                      <img
+                        src={publicUrl + "assets/img/widget/1.png"}
+                        alt="img"
+                      />
+                    </div>
+                    <div className="media-body">
+                      <p className="date">
+                        <i className="far fa-calendar-alt" />
+                        25 Aug 2020
+                      </p>
+                      <h6>
+                        <a href="#">Tiếp sức mùa thi 2k7</a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div className="widget widget-tags widget-border">
+                  <h5 className="widget-title">Popular Tags</h5>
+                  <div className="tagcloud">
+                    <a href="#">IELTS</a>
+                    <a href="#">Tiếng Anh Giao Tiếp</a>
+                  </div>
+                </div>
+                {/* <div className="widget widget-author widget-border text-center">
 		            <div className="thumb">
 		              <img src={publicUrl+"assets/img/widget/4.png" }alt="img" />
 		            </div>
@@ -283,8 +315,8 @@ class BlogDetails extends Component {
 		                <li><a href="#"><i className="fab fa-dribbble" /></a></li>
 		              </ul>
 		            </div>
-		          </div>
-		          <div className="widget widget-consultation">
+		          </div> */}
+                {/* <div className="widget widget-consultation">
 		            <div className="thumb">
 		              <img src={publicUrl+"assets/img/widget/5.png" }alt="img" />
 		            </div>
@@ -292,15 +324,13 @@ class BlogDetails extends Component {
 		              <h2>Need Any Consultations</h2>
 		              <a className="btn btn-base" href="#">Send Message</a>
 		            </div>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</section>
-
-
-    )
+		          </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
   }
 }
 

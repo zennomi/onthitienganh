@@ -19,7 +19,7 @@ class Banner extends Component {
 								<h2>Ms Hằng Nga <br /> <span>Education</span></h2>
 								<p>{contacts.slogan}</p>
 								<div className="btn-wrap">
-									<Link className="btn btn-white" to="/">Đăng ký học</Link>
+									<a className="btn btn-white" href="#lien-he">Đăng ký học</a>
 								</div>
 							</div>
 						</div>

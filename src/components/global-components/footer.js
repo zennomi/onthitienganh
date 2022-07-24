@@ -48,7 +48,7 @@ class Footer_v1 extends Component {
 								</ul>
 							</div>
 						</div>
-						<div className="col-lg-2 col-md-6">
+						{/* <div className="col-lg-2 col-md-6">
 							<div className="footer-widget widget widget_nav_menu">
 								<h4 className="widget-title">Useful link</h4>
 								<ul className="go-top">
@@ -60,8 +60,8 @@ class Footer_v1 extends Component {
 									<li><Link to="/category">Popular tags</Link></li>
 								</ul>
 							</div>
-						</div>
-						<div className="col-lg-2 col-md-6">
+						</div> */}
+						{/* <div className="col-lg-2 col-md-6">
 							<div className="footer-widget widget widget widget_products">
 								<h4 className="widget-title">Products</h4>
 								<ul className="go-top">
@@ -74,8 +74,8 @@ class Footer_v1 extends Component {
 									<li><Link to="/category">Web Templates (3)</Link></li>
 								</ul>
 							</div>
-						</div>
-						<div className="col-lg-3 offset-lg-1 col-md-6">
+						</div> */}
+						{/* <div className="col-lg-3 offset-lg-1 col-md-6">
 							<div className="footer-widget widget widget_news">
 								<h4 className="widget-title">Latest News</h4>
 								<div className="widget-news-wrap">
@@ -91,7 +91,7 @@ class Footer_v1 extends Component {
 									<p> <Link to="/blog-details">How to start selling ?</Link> </p>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				{/*Footer bottom*/}
@@ -99,7 +99,7 @@ class Footer_v1 extends Component {
 					<div className="copyright-area">
 						<div className="row">
 							<div className="col-lg-6 align-self-center">
-								<p>©2022 CopyRight Example. All rights reserved. </p>
+								<p>©2022 CopyRight. All rights reserved. </p>
 							</div>
 							<div className="col-lg-6 text-lg-right">
 								<ul>
