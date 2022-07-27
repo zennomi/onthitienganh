@@ -36,7 +36,7 @@ class Root extends Component {
 	                    <Route  path="/sign-up" component={SignUp} />
 	                    <Route  path="/contact" component={Contact} />
 	                    <Route path="/blog" component={Blog} />
-	                    <Route path="/blog-details/:id" component={BlogDetails} />
+	                    <Route path="/hoat-dong/:id" component={BlogDetails} />
 	                    <Route  path="/" component={HomeV2} />
 	                </Switch>
 	                </div>

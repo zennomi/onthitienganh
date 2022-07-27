@@ -6,5 +6,7 @@ export default {
     brandName: 'Ms Hằng Nga Education',
     slogan: 'Nơi gửi gắm niềm tin của cha mẹ',
     tiktok: '',
-    map: 'https://goo.gl/maps/qsvmxkcAh4y522Au9'
+    map: 'https://goo.gl/maps/qsvmxkcAh4y522Au9',
+    teacherName: 'Nguyễn Hằng Nga',
+    
 }

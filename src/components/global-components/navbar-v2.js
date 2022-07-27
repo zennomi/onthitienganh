@@ -91,6 +91,18 @@ class NavbarV2 extends Component {
                       </li>
                     </ul>
                   </li>
+                  <li>
+                    <a href="#diem-tin">Điểm tin</a>
+                  </li>
+                  <li>
+                    <a href="#cam-nhan">Review</a>
+                  </li>
+                  <li>
+                    <a href="#lien-he">Liên hệ</a>
+                  </li>
+                  <li>
+                    <a href="#cau-hoi">Câu hỏi</a>
+                  </li>
                 </ul>
               </div>
               <div className="nav-right-part nav-right-part-desktop">

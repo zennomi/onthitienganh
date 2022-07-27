@@ -9,7 +9,7 @@ class Testimonial extends Component {
 
 		let publicUrl = process.env.PUBLIC_URL + '/'
 
-		return <section className="testimonial-area text-center pd-top-90 pd-bottom-70">
+		return <section className="testimonial-area text-center pd-top-90 pd-bottom-70" id="cam-nhan">
 			<div className="container">
 				<div className="row justify-content-center">
 					<div className="col-lg-7">
