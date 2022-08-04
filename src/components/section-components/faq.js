@@ -119,6 +119,31 @@ class Faq extends Component {
                     </div>
                   </div>
                 </div>
+                <div className="card">
+                  <div className="card-header">
+                    <h2>
+                      <button
+                        className="btn collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        ĐỂ THAM GIA VÀO HỆ THỐNG CÁC LỚP HỌC BÊN CÔ HẰNG  NGA.
+                        <span className="collapse-icon" />
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    className="collapse"
+                    data-parent="#accordionExample"
+                  >
+                    <div className="card-body">
+                      📩 Yêu cầu về phía học sinh tham gia học: Có thể học kém nhưng phải thiện chí học tập, có sự quyết tâm trong việc học, hoàn thành lộ trình học mỗi ngày 20 phút theo đúng yêu cầu của Cô Hằng Nga. <br />
+                      📩 Yêu cầu về phía phụ huynh: Cần sát sao con, phối hợp cùng Cô để đôn đốc nhắc nhở con mỗi ngày và trong suốt quá trình theo học tại Hệ thống các lớp học của Cô Hằng Nga.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

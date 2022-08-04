@@ -80,7 +80,7 @@ class NavbarV2 extends Component {
               </div>
               <div className="collapse navbar-collapse" id="dkt_main_menu">
                 <ul className="navbar-nav menu-open">
-                  <li className="menu-item-has-children current-menu-item">
+                  {/* <li className="menu-item-has-children current-menu-item">
                     <a href="#">Home</a>
                     <ul className="sub-menu">
                       <li>
@@ -90,7 +90,7 @@ class NavbarV2 extends Component {
                         <Link to="/home-v2">Home 02</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#diem-tin">Điểm tin</a>
                   </li>

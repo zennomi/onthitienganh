@@ -104,16 +104,16 @@ class Footer_v1 extends Component {
 							<div className="col-lg-6 text-lg-right">
 								<ul>
 									<li>
-										<a href="#">Home</a>
+										<a href="#diem-tin">Điểm tin</a>
 									</li>
 									<li>
-										<a href="#">About</a>
+										<a href="#cam-nhan">Review</a>
 									</li>
 									<li>
-										<a href="#">Blog</a>
+										<a href="#lien-he">Liên hệ</a>
 									</li>
 									<li>
-										<a href="#">Contact</a>
+										<a href="#cau-hoi">Câu hỏi</a>
 									</li>
 								</ul>
 							</div>

@@ -1,7 +1,7 @@
 {
   "name": "drketa",
   "version": "0.1.0",
-  "homepage": "https://solverwp.com/demo/react/drketa",
+  "homepage": "https://onthitienganh.edu.vn",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,6 +12,7 @@
     "owl.carousel": "^2.3.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-responsive": "^9.0.0-beta.10",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "wowjs": "^1.1.3"

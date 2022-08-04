@@ -4241,7 +4241,7 @@ ul {
 
 .single-blog-inner:hover .thumb .video-play-btn,
 .single-blog-inner:hover .thumb:after {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .single-blog-inner .thumb {

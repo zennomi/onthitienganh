@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import contacts from '../../contacts';
+import { useMediaQuery } from 'react-responsive';
 
-class Banner extends Component {
+function Banner() {
 
-	render() {
+	let publicUrl = process.env.PUBLIC_URL + '/'
+	let imagealt = 'image'
+	const isDesktopOrLaptop = useMediaQuery({
+		query: '(min-width: 1224px)'
+	})
 
-		let publicUrl = process.env.PUBLIC_URL + '/'
-		let imagealt = 'image'
-
-		return <div className="banner-area" style={{ background: 'url(' + publicUrl + 'assets/img/banner/2.png)' }}>
-			<div className="container">
+	return <div className="banner-area">
+		{/* <div className="container">
 				<div className="banner-area-inner">
 					<div className="row justify-content-center">
 						<div className="col-lg-8">
@@ -23,23 +25,13 @@ class Banner extends Component {
 								</div>
 							</div>
 						</div>
-						{/* <div className="col-md-10">
-			          <form>
-			            <select>
-			              <option>All resources</option>
-			              <option value={1}>1 resource</option>
-			              <option value={2}>2 resource</option>
-			              <option value={3}>3 resource</option>
-			            </select>
-			            <input type="text" className="form-control" />
-			            <button type="submit" className="btn"><img src={publicUrl+"assets/img/icon/1.png"} alt="img" /></button>
-			          </form>
-			        </div> */}
 					</div>
 				</div>
-			</div>
-		</div>
-	}
+			</div> */}
+		<a href="#lien-he">
+			<img style={{ width: "100%", }} src={publicUrl + (isDesktopOrLaptop ? 'assets/img/mshangnga/banner.jpg' : 'assets/img/mshangnga/banner-mobile.jpg')} alt="banner" />
+		</a>
+	</div>
 }
 
 export default Banner

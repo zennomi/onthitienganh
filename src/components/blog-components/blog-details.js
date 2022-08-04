@@ -14,7 +14,7 @@ export default function BlogDetails() {
     .filter((_, index) => index !== Number(id));
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, [id]);
 
   return blog ? (
@@ -36,25 +36,31 @@ export default function BlogDetails() {
                   </div>
                   <h3>{blog.title}</h3>
                   <p>{blog.content}</p>
+                  {
+                    blog.images && blog.images.map(image =>
+                      <div className="thumb mb-2">
+                        <img key={image} src={publicUrl + image} alt="image" />
+                      </div>
+                    )
+                  }
                 </div>
                 <div className="author-area">
                   <div className="media">
                     <img
-                      src={publicUrl + "assets/img/author/blog-author.png"}
+                      src={publicUrl + "assets/img/mshangnga/nga.jpg"}
                       alt="img"
+                      width="230px"
                     />
                     <div className="media-body align-self-center">
-                      <h4>Nathan George</h4>
+                      <h4>Ms {contacts.teacherName}</h4>
                       <p>
-                        No one rejects, dislikes, or avoids pleasure itself,
-                        because it is pleasure, but because those who do not
-                        know how to pursue pleasure rationally encounter
-                        consequences that aextremely painful. Nor again is there
-                        anyone who loves
+                        Một hệ thống các lớp học được KIỂM SOÁT CHẶT CHẼ BỞI CÔ HẰNG NGA 💪💪💪<br />
+                        Chỉ cần các con có đủ tình yêu với các lớp bên Cô Hằng Nga thì TỰ SẼ TIẾN BỘ!<br />
+                        Các con sợ Cô Hằng Nga lắm nhưng mà cũng yêu Cô Hằng Nga lắm ấy bởi vì Cô yêu chúng nên rèn rũa kinh lắm à 🥰<br />
                       </p>
                       <ul className="social-area social-area-2">
                         <li>
-                          <a href="#">
+                          <a href={contacts.facebook} target="_blank">
                             <i className="fab fa-facebook-f" />
                           </a>
                         </li>
@@ -62,7 +68,7 @@ export default function BlogDetails() {
                     </div>
                   </div>
                 </div>
-                <div className="post-check">
+                {/* <div className="post-check">
                   <div className="row">
                     <div className="col-lg-6">
                       <div className="single-news-wrap media">
@@ -109,7 +115,7 @@ export default function BlogDetails() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="related-post">
                   <div className="section-title">
                     <h3>Điểm tin khác</h3>
@@ -150,17 +156,17 @@ export default function BlogDetails() {
             <div className="sidebar-area">
               <div className="widget widget-author widget-border text-center">
                 <div className="thumb">
-                  <img src={publicUrl + "assets/img/widget/4.png"} alt="img" />
+                  <img src={publicUrl + "assets/img/mshangnga/nga.jpg"} alt="img" />
                 </div>
                 <div className="author-details">
                   <h4>{contacts.teacherName}</h4>
                   <span>Giáo viên</span>
                   <p>
-                    Mọi hệ thống bài giảng đều được cô Nga biên soạn kỹ lưỡng.
+                    CÔ CHẲNG PHẢI GIÁO VIÊN GIỎI NHẤT NHƯNG CHẮC CHẮN LÀ CÔ GIÁO YÊU THƯƠNG CÁC CON NHIỀU NHẤT" 💞
                   </p>
                   <ul className="social-area">
                     <li>
-                      <a href="#">
+                      <a href={contacts.facebook} target="_blank">
                         <i className="fab fa-facebook-f" />
                       </a>
                     </li>
@@ -169,13 +175,13 @@ export default function BlogDetails() {
               </div>
               <div className="widget widget-consultation">
                 <div className="thumb">
-                  <img src={publicUrl + "assets/img/widget/5.png"} alt="img" />
+                  <img src={publicUrl + "assets/img/mshangnga/widget.jpg"} alt="img" />
                 </div>
-                <div className="consultation-wrap text-center px-3">
-                  <h2>Muốn cải thiện tiếng Anh của con em?</h2>
-                  <Link className="btn btn-base" to="/#lien-he">
+                <div className="consultation-wrap text-center">
+                  <h2>Mất gốc tiếng Anh?</h2>
+                  <a className="btn btn-base" href={contacts.facebook} target="_blank">
                     Đăng ký ngay
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
